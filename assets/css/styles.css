@@ -1,0 +1,1576 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family:"Roboto";
+    color: #444444;
+}
+
+a{
+    color: #ffc451;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd584;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:"Roboto";
+}
+
+.all_unique_class_pt{
+    padding-top: 123px;
+
+}
+
+.all_unique_class_pb{
+    padding-bottom: 150px;
+}
+
+.all-container{
+    max-width: 1264px;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #ffc451;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #151515;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: #151515;
+}
+
+.back-to-top:hover i {
+    color: #ffc451;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ------------Hero section --------------- */
+
+/* Header Navigation Container */
+.nav-container {
+    flex-shrink: 0;
+    height: 98px;
+    border-radius: 67px;
+    border: 1px solid #000000;
+    background: #FFF;
+    padding: 24px 40px;
+}
+
+
+
+/* Adjustments for Hero Section */
+.hero {
+    padding-top: 24px;
+}
+
+#hero .header .nav-b {
+    padding: 0;
+}
+
+/* Get Started Button in Header */
+#header .navbar .get-started-btn {
+    display: inline-flex;
+    padding: 16px 38px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 42px;
+    background: #F6A41C;
+    color: #ffffff;
+}
+#hero .header .nav-b .nav-container .navbar-toggler .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Navigation Item Styling */
+#hero .header .nav-b .nav-container .div-nav .nav_ul li a {
+    padding: 20px;
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.68px;
+}
+
+/* Active Navigation Item */
+#hero .header .nav-b .nav-container .div-nav .nav_ul .nav_active a.active {
+    color: #F6A41C;
+}
+
+/* Hover Effect on Navigation Items */
+#hero .header .nav-b .nav-container .div-nav .nav_ul li a:hover {
+    color: #F6A41C;
+}
+
+/* Hover Effect on Get Started Button */
+#hero .header .nav-b .nav-container .div-nav #get-a:hover {
+    background: #000;
+}
+
+/* Hero Section Styles */
+#hero {
+    width: 100%;
+    background: #F6A41C;
+    background-size: cover;
+}
+
+.heroimg {
+    flex-shrink: 0;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+/* Hero Text Styles */
+#hero .row h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 70.4px;
+}
+
+#hero .row p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25.68px;
+}
+
+/* App Store Button Styling */
+.app_store {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Media Queries for Hero Section */
+
+@media screen and (max-width:991px) {
+    .navbar-collapse {
+        background: rgb(255, 255, 255);
+        border-radius: 0px 0px 15px 15px;
+        padding: 15px 20px;
+        z-index: 9999;
+        position: relative;
+        left: 0px;
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 30px;
+        margin-top: 14px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #hero .row h1 {
+        font-size: 53px;
+        line-height: 60px;
+    }
+
+    #hero .row p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #hero .row h1 {
+        font-size: 53px;
+        line-height: 60px;
+    }
+
+    #hero .row p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero .row h1 {
+        font-size: 47px;
+        line-height: 56px;
+    }
+
+    #hero .row p {
+        font-size: 12px;
+    }
+
+    .app_store {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #hero .row h1 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    #hero .row p {
+        font-size: 13px;
+    }
+
+    .heroimg {
+        margin-left: 0;
+    }
+}
+
+/* About Section Styles */
+.about {
+    padding: 0;
+    margin: 0;
+}
+
+#main .about .section-title h5 {
+    font-weight: 500;
+    margin-top: 123px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 22px;
+    color: #F6A41C;
+    text-align: center;
+}
+
+#main .about .section-title h3 {
+    color: #2D2D2D;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 44px;
+    text-transform: capitalize;
+}
+
+#main .about .section-title p {
+    margin-bottom: 42px;
+    font-size: 16px;
+    color: #848484;
+    text-align: center;
+    font-weight: 400;
+    line-height: 25.68px;
+}
+
+
+/* -------------card area style------------- */
+
+/* About Section Card Styles */
+#main .about .card {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.10);
+    border: 0px solid rgb(98 98 98);
+    transition: all 0.3s ease-in-out;
+}
+
+#main .about .card:hover {
+    box-shadow: 0px 17px 71px 0px rgba(0, 0, 0, 0.05);
+    transform: scale(1);
+    z-index: 1;
+}
+
+#main .about .card .card-body {
+    padding: 24px 31px 94px 24px;
+}
+
+#main .about .card .card-body .img-box {
+    display: inline-block;
+    padding: 17px 17px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: rgba(246, 164, 28, 0.20);
+    flex-shrink: 0;
+    filter: drop-shadow(0px 18px 20px rgba(246, 164, 28, 0.30));
+    background-color: rgba(246, 164, 28, 0.2);
+}
+
+#main .about .card .card-body .img-box img {
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+}
+
+#main .about .card-body h5 {
+    color: #2D2D2D;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30.8px;
+    padding-top: 40px;
+    padding-bottom: 16px;
+}
+
+#main .about .card .card-text {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.68px;
+}
+
+/* Additional Hover Effect on Card */
+#main .about .card:hover {
+    box-shadow: 0px 17px 71px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* -------End the card area ----------- */
+
+
+/* -------Start Here the section features area style ----------- */
+
+
+#main .features h4 {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+    max-width: 468px;
+    text-transform: capitalize;
+}
+
+#main .features h4 span {
+    color: #f6a41c;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+}
+
+#main .features .features-title .features-subtitle {
+
+    color: #848484;
+    font-size: 16px;
+    max-width: 515px;
+    font-weight: 400;
+    line-height: 25.68px;
+}
+
+/* #main .features .features-img {
+
+} */
+
+/* Features Section Title Styles */
+#main .features h4 {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+    max-width: 468px;
+    text-transform: capitalize;
+}
+
+#main .features h4 span {
+    color: #f6a41c;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+}
+
+#main .features .features-title .features-subtitle {
+    color: #848484;
+    font-size: 16px;
+    max-width: 515px;
+    font-weight: 400;
+    line-height: 25.68px;
+}
+
+/* Features Section Styles */
+#main .features1 {
+    position: relative;
+    z-index: 1;
+}
+
+#main .features1 .features-point:first-child{
+    padding-top: 90px;
+}
+#main .features1 .features-point{
+    color: rgba(49, 49, 49, 0.30);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 44px;
+    display: inline-flex;
+    gap: 16px;
+    padding-top: 48px;
+    border-bottom: 1px solid;
+    stroke: rgba(142, 142, 142, 0.50);
+}
+
+#main .features1 .features-point:last-child {
+    color: rgba(49, 49, 49, 0.30);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 44px;
+    display: inline-flex;
+    gap: 16px;
+    padding-top: 48px;
+    border-bottom: 1px solid;
+    stroke: rgba(142, 142, 142, 0.50);
+}
+
+#main .features1 .features-point:last-child {
+    border-bottom: none;
+}
+
+#main .features1 .features-point .features-point-hp {
+    margin-top: 16px;
+}
+
+#main .features1 .features-point .number {
+    color: rgba(49, 49, 49, 0.30);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 61.6px;
+}
+
+#main .features1 .features-point h5 {
+    color: #2D2D2D;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30.8px;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+}
+
+#main .features1 .features-point p,
+#main .features1 .features-point .last-p {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.68px;
+    max-width: 454px;
+    padding-bottom: 24px;
+}
+
+#main .features1 .features-point .last-p {
+    padding-bottom: 78px;
+}
+
+/* Features Section Image Styles */
+.features .features-img {
+    height: 100%;
+}
+
+.features .features-img img {
+    height: 100%;
+}
+
+
+/* -------------------------End the features section area ------------------------- */
+
+/* ________________Start Here the services section area___________________ */
+
+/* Services Section Styles */
+#main .services {
+    padding: 0;
+    background: #F9F9F9;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Services Container Styles */
+#main .services .services_container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-self: center !important;
+    justify-content: center;
+    align-items: center;
+    padding: 86px 195px 86px 88px;
+}
+
+/* Services Main Section Styles */
+#main .services .services_container .servicesside_main {
+    display: flex;
+    flex-direction: row;
+    align-self: center !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 86px;
+    column-gap: 105px;
+}
+
+/* Services Side Image Styles */
+#main .services .services_container .servicesside_main .servicesside_img {
+    position: relative;
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    align-self: center !important;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+/* Service Side Image - Pic 2 Styles */
+#main .services .services_container .servicesside_main .servicesside_img .pic_2 {
+    position: absolute;
+    z-index: 1;
+    top: 222px;
+}
+
+/* Service Side Image - Pic 1 Styles */
+#main .services .services_container .servicesside_main .servicesside_img .pic_1 {
+    position: absolute;
+    bottom: 40px;
+}
+
+/* Service Side Image - Phone Pic Styles */
+#main .services .services_container .servicesside_main .servicesside_img .phone_pic {
+    position: relative;
+    z-index: 2;
+}
+
+/* ___________________________service section done_________________________ */
+
+
+/* ________________Start Here the services section title area___________________ */
+
+#main .services .services_container .servicesside_main .services_area {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#main .services .services_container .servicesside_main .services_area .services_heading .services_title h4 {
+    color: #2D2D2D;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    padding-bottom: 80px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#main .services .services_container .servicesside_main .services_area .services_heading .services_title h4 span {
+    color: #F6A41C;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    text-transform: capitalize;
+}
+
+#main .services .services_container .servicesside_main .services_area .services_details {
+    display: grid;
+    max-width: 454px;
+}
+
+#main .services .services_container .servicesside_main .services_area .services_details .details_app {
+    display: flex;
+    flex-direction: column;
+    align-self: center !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 19px;
+    position: relative;
+    border-left: 1px dashed#9090903D;
+}
+
+
+#main .services .services_container .servicesside_main .services_area .services_details .details_app h3 {
+    color: #2D2D2D;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 7px;
+    line-height: 30.8px;
+}
+
+#main .services .services_container .servicesside_main .services_area .services_details .details_app .details_app_text {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 36px;
+    line-height: 25.68px;
+}
+
+#main .services .services_container .servicesside_main .services_area .services_details .details_app:last-child {
+    border-left: none;
+}
+
+
+#main .services .services_container .servicesside_main .services_area .services_details .details_app .service_bullet img {
+    position: absolute;
+    left: -7px;
+    bottom: 8.2em;
+}
+
+
+
+/* ________________________________Start Here to the customer section area ___________________________________ */
+
+.customer .customer_container {
+    max-width: 1440px;
+}
+
+.customer .customer_container {
+    padding-right: 88px;
+    padding-left: 88px;
+}
+
+.customer .customer_container .row .customer_heading .customer_title h3 {
+    color: #2D2D2D;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    text-transform: capitalize;
+    padding-top: 150px;
+    padding-bottom: 52px;
+}
+
+.customer .customer_container .row .customer_heading .customer_title h3 span {
+    color: #F6A41C;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    text-transform: capitalize;
+}
+
+.customer .container .slider_main {
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.customer .container .slider_main .slider-start {
+    margin-right: 25px;
+}
+
+.customer .container .slider_main .slider-start .slider_1 {
+    padding: 24px 59px 36px 24px;
+}
+
+.customer .container .slider_main .slick-prev:before,
+.customer .container .slider_main .slick-next:before  {
+    color: black;
+    line-height: 1;
+    opacity: .75;
+}
+
+.customer .container .slider_main .slick-next {
+    background: transparent;
+    font-size: 0;
+    line-height: 0;
+    top: -66px;
+    margin-top: -10px\9;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    right: 27px;
+    margin-bottom: 78px;
+}
+
+.customer .container .slider_main .slick-prev {
+    left: 91%;
+    font-size: 0;
+    line-height: 0;
+    top: -66px;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+}
+
+.customer .container .slider_main .slider-start .slider_1 .slider_div {
+    display: flex;
+    row-gap: 4px;
+    justify-content: flex-start;
+}
+
+/* .customer .container .slider_main .slider-start .slider_1 .slider_div .slider_description {
+    padding-right: 35px;
+} */
+
+
+.customer .container .slider_main .slider-start .slider_1 .slider_description p {
+    color: #8E8E8E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36.24px;
+    max-width: 539px;
+}
+
+.customer .container .slider_main .slider-start .slider_1 .slider_div img {
+    border-radius: 4px;
+    max-width: 73px;
+    height: 73px;
+}
+
+.customer .container .slider_main .slider-start .slider_1 .slider_div .slider_name {
+    padding-top: 20px;
+    padding-left: 12px;
+}
+
+.customer .container .slider_main .slider-start .slider_1 .slider_div .slider_name .heading {
+    color: var(--bricks-color-wwgkzh);
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 120%;
+    padding-bottom: 4px;
+}
+
+.customer .container .slider_main .slider-start .slider_1 .slider_div .slider_name .sub-title {
+    color: var(--bricks-color-ribybs);
+    font-size: 13px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20.865px;
+}
+
+/*--------------------------------------------------------------
+# accordion
+--------------------------------------------------------------*/
+
+#accordion {
+    background: #FFF;
+}
+
+#accordion .container .accordion-main .accordion_heading .accordion_title {
+    padding-top: 150px;
+}
+
+#accordion .container .accordion-main .accordion_heading .accordion_title h3 {
+    color: #2D2D2D;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: capitalize;
+}
+
+#accordion .container .accordion-main .accordion_heading .accordion_title span {
+    color: #F6A41C;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: capitalize;
+}
+
+#accordion .container .accordion-main .accordion_heading .accordion_title p {
+    color: #848484;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 12px;
+    margin: 0;
+    padding-right: 87px;
+    padding-left: 87px;
+    padding-bottom: 48px;
+}
+
+#accordion .container .accordion-main .accordion-faq .start-faq {
+    padding-bottom: 150px;
+}
+
+#accordion .container .accordion-main .accordion-faq .start-faq .accordion .accordion-item {
+    border-radius: 4px;
+    border: 0.5px solid #CDCDCD;
+    background: #FFF;
+    margin-bottom: 12px;
+}
+
+#accordion .container .accordion-main .accordion-faq .start-faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    background: transparent;
+    box-shadow: none;
+}
+
+#accordion .container .accordion-main .accordion-faq .start-faq .accordion .accordion-item .accordion-header .accordion_head {
+    margin: 0;
+    color: #2D2D2D;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.6px;
+}
+
+#accordion .container .accordion-main .accordion-faq .start-faq .accordion .accordion-item .accordion-body {
+    color: #848484;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*--------------------------------------------------------------
+# ahero
+--------------------------------------------------------------*/
+
+/* Hero Section Styles */
+#ahero {
+    background: #F9F9F9;
+}
+
+/* Hero Image Styles */
+.aheroimg {
+    transform: rotate(4.775deg);
+    flex-shrink: 0;
+    margin-left: 100px;
+}
+
+/* Hero Heading Styles */
+#ahero .row .h-1 {
+    padding-top: 121px;
+}
+
+#ahero .row h1 {
+    color: #2D2D2D;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 61.6px;
+    padding-bottom: 16px;
+    max-width: 525px;
+    text-transform: capitalize;
+}
+
+#ahero .row h1 span {
+    color: #F6A41C;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 61.6px;
+    text-transform: capitalize;
+}
+
+/* Hero Paragraph Styles */
+#ahero p {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.68px;
+    padding-bottom: 32px;
+}
+
+/* App Store Icons Styles */
+.app_store1 {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 149px;
+}
+
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+    padding-top: 32px;
+    background: #F6A41C;
+    padding-bottom: 32px;
+}
+
+.clients .swiper-slide img {
+    padding-left: 28px;
+
+}
+
+.clients .container .clients-slider .swiper-wrapper .swiper-slide img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.clients .container .clients-slider .swiper-wrapper .swiper-slide .slider {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-flex;
+}
+
+.clients .container .clients-slider .swiper-wrapper .swiper-slide .slider:first-child {
+    padding-left: 28px;
+}
+
+.clients .container .clients-slider .swiper-wrapper .swiper-slide .slider h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    margin-top: 150px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer .footer-top {
+    background: #151515;
+    border-bottom: 1px solid #222222;
+    padding: 92px 40px 92px 40px;
+}
+
+#footer .footer-top .footer-info {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info img {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#footer .footer-top .footer-info p {
+    margin: 24px 0 36px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 273px;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #292929;
+    color: #fff;
+    line-height: 1;
+    padding: 10px 0;
+    margin-right: 4px;
+    border-radius: 30px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+    background: #ffc451;
+    color: #151515;
+    text-decoration: none;
+}
+
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 44px;
+}
+
+#footer .footer-top h4:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    background-color: #FFFFFF;
+    height: 2px;
+    box-sizing: border-box;
+    width: 54px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #ffc451;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color: #ffc451;
+}
+
+/* ____________ Start Here Media Queries section____________ */
+
+
+
+@media screen and (max-width: 1024px) {
+
+    /*{_ Start Here Media Queries about section_ }*/
+
+    #main .about .section-title h3 {
+        font-size: 33px;
+        line-height: 104%;
+    }
+    #main .about .section-title p {
+
+        font-size: 13px;
+        line-height: 147.5%;
+    }
+    #main .about .card-body h5 {
+        font-size: 25px;
+        line-height: 110%;
+    }
+    #main .about .card .card-text {
+        font-size: 12px;
+        line-height: 157.5%;
+    }
+    /*{_ END Here Media Queries about section_ }*/
+
+    /*{_ Start Here Media Queries features section_ }*/
+    #main .features h4 {
+        font-size: 32px;
+        line-height: 100%;
+    }
+    #main .features .features-title .features-subtitle {
+        font-size: 13px;
+        line-height: 23.68px;
+    }
+    /*{_ END Here Media Queries features section_ }*/
+
+    /*{_ Start Here Media Queries services section_ }*/
+    .customer .customer_container {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_heading .services_title h4 span {
+        font-size: 27px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_heading .services_title h4 {
+        font-size: 27px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app h3 {
+        font-size: 22px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app .service_bullet img {
+        bottom: 11.5em;
+    }
+    #main .services .services_container .servicesside_main {
+        column-gap: 112px;
+    }
+    /*{_ END Here Media Queries services section_ }*/
+
+
+
+    /*{_ Start Here Media Queries accordion section_ }*/
+    #accordion .container .accordion-main .accordion_heading .accordion_title span {
+        line-height: 80px;
+    }
+    /*{_ END Here Media Queries accordion section_ }*/
+
+    /*{_ Start Here Media Queries clients section_ }*/
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider h3 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41px;
+    }
+    /*{_ END Here Media Queries clients section_ }*/
+
+    /*{_ Start Here Media Queries .hero section_ }*/
+    .heroimg {
+        flex-shrink: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    /*{_ END Here Media Queries .hero section_ }*/
+
+}
+
+@media screen and (max-width: 990px) {
+
+    /*{_ Start Here Media Queries customer section_ }*/
+    .customer .container .slider_main .slick-prev {
+        left: 80%;
+        top: -30px;
+    }
+    /*{_ END Here Media Queries customer section_ }*/
+}
+
+@media screen and (max-width: 991px) {
+
+    /*{_ Start Here Media Queries about section_ }*/
+    #main .about .section-title h3 {
+        font-size: 25px;
+        line-height: 104%;
+    }
+    #main .about .section-title p {
+        font-size: 10px;
+        line-height: 143.5%;
+    }
+    #main .about .card .card-text {
+        font-size: 13px;
+        line-height: 159.5%;
+    }
+    /*{_ END Here Media Queries about section_ }*/
+
+    /*{_ Start Here Media Queries features section_ }*/
+    #main .features .features-title .features-subtitle {
+        font-size: 14px;
+        line-height: 22.68px;
+    }
+    /*{_ END Here Media Queries features section_ }*/
+
+    /*{_ Start Here Media Queries services section_ }*/
+    #main .services .services_container {
+        align-items: center;
+        padding: 0px 19px 29px 20px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app .service_bullet img {
+        bottom: 9.8em;
+    }
+    /*{_ END Here Media Queries services section_ }*/
+}
+
+@media screen and (max-width: 768px) {
+
+    /*{_ Start Here Media Queries about section_ }*/
+    #main .about .section-title h3 {
+        font-size: 40px;
+        line-height: 104%;
+    }
+    #main .about .section-title p {
+        font-size: 16px;
+        line-height: 155.5%;
+    }
+    /*{_ END Here Media Queries about section_ }*/
+
+    /*{_ Start Here Media Queries features section_ }*/
+    .features .features-img img {
+        height: 100%;
+        width: 100%;
+    }
+    #main .features1 .features-point p:last-child {
+        color: #848484;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.68px;
+        max-width: 454px;
+        /* padding-bottom: 78px; */
+    }
+    #main .features1 .features-point p:last-child {
+        padding-bottom: 24px;
+    }
+    /*{_ END Here Media Queries features section_ }*/
+
+    /*{_ Start Here Media Queries services section_ }*/
+    .customer .container .slider_main .slick-prev {
+        left: 85%;
+        top: -41px;
+    }
+    .customer .container .slider_main .slick-next {
+        top: -41px;
+        right: 38px;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img {
+        max-width: 100%;
+    }
+    #main .services .services_container .servicesside_main {
+        display: block;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app h3 {
+        font-size: 28px;
+        line-height: 30px;
+
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app .service_bullet img {
+        bottom: 8.2em;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_heading .services_title h4 {
+        padding-top: 32px;
+    }
+    #main .services .services_container .servicesside_main .services_area {
+        row-gap: 10px;
+    }
+    /*{_ END Here Media Queries services section_ }*/
+
+    /*{_ Start Here Media Queries customer section_ }*/
+    .customer .customer_container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    /*{_ END Here Media Queries customer section_ }*/
+
+    /*{_ Start Here Media Queries ahero section_ }*/
+    #ahero .row h1 span {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    #ahero .row h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    #ahero p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    /*{_ END Here Media Queries ahero section_ }*/
+
+    /*{_ Start Here Media Queries clients section_ }*/
+    .clients {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider h3 {
+        font-size: 32px;
+        line-height: 65px;
+    }
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider:first-child {
+        padding-left: 28px;
+    }
+    /*{_ END Here Media Queries clients section_ }*/
+
+    /*{_ Start Here Media Queries .hero section_ }*/
+    .app_store1 {
+        display: flow;
+        justify-items: center;
+        align-items: center;
+        gap: 24px;
+        padding-bottom: 10px;
+    }
+    /*{_ END Here Media Queries .hero section_ }*/
+
+}
+
+@media screen and (max-width:565px) {
+
+    /*{_ Start Here Media Queries clients section_ }*/
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider h3 {
+        font-size: 20px;
+        line-height: 56px;
+    }
+    /*{_ END Here Media Queries clients section_ }*/
+}
+
+@media screen and (max-width: 425px) {
+
+    /*{_ Start Here Media Queries services section_ }*/
+    #main .services .services_container .servicesside_main .servicesside_img .pic_1 {
+        display: none;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img .pic_2 {
+        display: none;
+    }
+    #main .services .services_container {
+        padding-right: 10px;
+        padding-left: 70px;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img {
+        max-width: 71%;
+        padding-top: 24px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details {
+        grid-gap: 16px;
+        max-width: 454px;
+        position: relative;
+        border-left: 1px dashed#9090903D;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img .phone_pic {
+        width: 108%;
+    }
+    #main .services .services_container {
+        padding-right: 10px;
+        padding-left: 15px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app .service_bullet img {
+        bottom: 9.7em;
+
+    }
+    /*{_ END Here Media Queries services section_ }*/
+
+    /*{_ Start Here Media Queries customer section_ }*/
+    .customer .customer_container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .customer .customer_container .row {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .customer .container .slider_main .slick-next {
+        top: -30px;
+        right: 40px;
+    }
+    .customer .container .slider_main .slick-prev {
+        left: 70%;
+        top: -30px;
+    }
+    .customer .customer_container .row .customer_heading .customer_title h3 {
+        font-size: 40px;
+        line-height: 51px;
+    }
+    /*{_ END Here Media Queries customer section_ }*/
+
+
+
+    /*{_ Start Here Media Queries accordion section_ }*/
+    #accordion .container .accordion-main .accordion_heading .accordion_title h3 {
+        font-size: 44px;
+        line-height: 40px;
+    }
+    #accordion .container .accordion-main .accordion_heading .accordion_title span {
+
+        font-size: 50px;
+        line-height: 61px;
+    }
+    #accordion .container .accordion-main .accordion_heading .accordion_title p {
+        font-size: 11px;
+        line-height: 150%;
+        padding-right: 4px;
+        padding-left: 8px;
+        padding-bottom: 21px;
+    }
+    #accordion .container .accordion-main .accordion_heading .accordion_title {
+        padding-top: 20px;
+    }
+    /*{_ END Here Media Queries accordion section_ }*/
+
+    /*{_ Start Here Media Queries clients section_ }*/
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider:first-child {
+        padding-left: 30%;
+    }
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider h3 {
+        font-size: 23px;
+        line-height: 51px;
+    }
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider:first-child {
+        padding-left: 5em;
+    }
+    /*{_ END Here Media Queries clients section_ }*/
+
+    /*{_ Start Here Media Queries .hero section_ }*/
+    #ahero .row .h-1 {
+        padding-top: 25px;
+    }
+    /*{_ END Here Media Queries .hero section_ }*/
+
+}
+
+@media screen and (max-width: 375px) {
+
+    /*{_ Start Here Media Queries customer section_ }*/
+    .customer .customer_container .row {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .customer .customer_container .row .customer_heading .customer_title h3 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    .customer .container .slider_main .slick-prev {
+        left: 65%;
+        top: -25px;
+    }
+    .customer .container .slider_main .slick-next {
+        top: -25px;
+        right: 45px;
+    }
+    /*{_ END Here Media Queries customer section_ }*/
+
+    /*{_ Start Here Media Queries ahero section_ }*/
+    #ahero .row h1 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    #ahero .row h1 span {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    /*{_ END Here Media Queries ahero section_ }*/
+
+    /*{_ Start Here Media Queries clients section_ }*/
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider h3 {
+        font-size: 23px;
+        line-height: 46px;
+    }
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide {
+        width: 351px;
+        margin-right: 70px;
+    }
+    /*{_ END Here Media Queries clients section_ }*/
+
+        /*{_ Start Here Media Queries .hero section_ }*/
+        .app_store1 {
+            display: flow;
+            gap: 17px;
+            padding-bottom: 10px;
+        }
+    /*{_ END Here Media Queries .hero section_ }*/
+
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    /*{_ Start Here Media Queries features section_ }*/
+    #main .features .features-img {
+        display: contents;
+    }
+    /*{_ END Here Media Queries features section_ }*/
+
+    /*{_ Start Here Media Queries services section_ }*/
+    #main .services .services_container .servicesside_main .servicesside_img {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-self: center !important;
+        padding-top: 24px;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img .pic_1 {
+        display: none;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img .pic_2 {
+        display: none;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img .phone_pic {
+        width: 100%;
+    }
+    #main .services .services_container .servicesside_main {
+        flex-direction: row;
+        align-self: center !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 105px;
+    }
+    #main .services .services_container .servicesside_main .services_area {
+        display: flex;
+    }
+    #main .services .services_container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #main .services .services_container .servicesside_main {
+        display: block;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img .phone_pic {
+        left: 8px;
+    }
+    #main .services .services_container .servicesside_main .servicesside_img {
+        display: flex;
+        align-self: center !important;
+        justify-content: center;
+        align-items: center;
+        padding-top: 24px;
+    }
+    #main .services .services_container .servicesside_main {
+        margin-top: 0;
+
+    }
+    #main .services .services_container {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app .details_app_text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app .service_bullet img {
+        bottom: 8.5em;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details {
+        grid-gap: 12px;
+
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details {
+        border-left: 1px dashed#9090903D;
+    }
+    #main .services .services_container .servicesside_main .services_area .services_details .details_app h3 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    /*{_ END Here Media Queries services section_ }*/
+
+    /*{_ Start Here Media Queries customer section_ }*/
+    .customer .container .slider_main .slick-prev {
+        left: 69%;
+        top: -20px;
+    }
+    .customer .container .slider_main .slick-next {
+        top: -20px;
+        right: 27px;
+        margin-bottom: 78px;
+    }
+    .customer .customer_container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    /*{_ END Here Media Queries customer section_ }*/
+
+    /*{_ Start Here Media Queries accordion section_ }*/
+    #accordion .container .accordion-main .accordion_heading .accordion_title h3 {
+        font-size: 38px;
+        line-height: 36px;
+    }
+    #accordion .container .accordion-main .accordion_heading .accordion_title span {
+        font-size: 41px;
+        line-height: 50px;
+    }
+    /*{_ END Here Media Queries accordion section_ }*/
+
+    /*{_ Start Here Media Queries clients section_ }*/
+    .clients .container .clients-slider .swiper-wrapper .swiper-slide .slider h3 {
+        font-size: 21px;
+        line-height: 55px;
+    }
+    /*{_ END Here Media Queries clients section_ }*/
+
+    /*{_ Start Here Media Queries footer section_ }*/
+    #footer .footer-top {
+        padding: 92px 40px 40px 40px;
+    }
+    /*{_ END Here Media Queries footer section_ }*/
+
+}
